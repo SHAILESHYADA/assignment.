@@ -1,0 +1,25 @@
+Replacement Steps for Integrating XAgent into L3AGI Framework
+
+  test.py:
+
+1- Replace LangChain REACT Agent imports with XAgent framework imports.
+2- Modify agent_factory to initialize and configure XAgent instead of LangChain REACT Agent.
+3- Ensure compatibility with evaluation configurations using XAgent.
+4- Update tool configurations to be compatible with XAgent.
+5- Test and validate XAgent integration with the dataset.
+
+  conversational.py:
+
+1- Replace all LangChain REACT Agent-related imports with XAgent equivalents.
+2- Update agent initialization to use XAgent instead of LangChain REACT Agent.
+3- Modify memory handling and callbacks to align with XAgent's API.
+4- Ensure seamless integration of XAgent into conversational pipelines.
+5- Verify final responses from XAgent during runtime.
+
+  dialogue_agent_with_tools.py:
+
+1- Replace LangChain REACT Agent imports with XAgent framework imports.
+2- Update the send() method to initialize XAgent for conversational workflows.
+3- Modify memory and tool handling to work with XAgent’s structure.
+4- Ensure the system message and output parser configurations align with XAgent.
+5- Validate response generation and update the message history logic.
